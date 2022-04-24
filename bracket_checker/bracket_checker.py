@@ -47,4 +47,5 @@ if __name__ == "__main__":
     print(is_valid(r"[]{()}"))
     print(is_valid(r"([]{})"))
     print(is_valid(r"([]})"))
+    print(is_valid(r"[]{)(}"))
 
