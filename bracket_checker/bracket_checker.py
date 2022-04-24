@@ -29,6 +29,7 @@ def is_valid(s: str) -> bool:
             except ValueError:
                 # this means the bracket was never closed
                 status.append(False)
+        # this is to handle cases where there are no opening brackets
         elif  char_dict_inverse.get(char) not in s:
             status.append(False)
 
