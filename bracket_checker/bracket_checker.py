@@ -1,4 +1,4 @@
-def isValid(s: str) -> bool:
+def is_valid(s: str) -> bool:
     char_dict = {"{": "}", "(": ")", "[": "]"}
     status = []
     for char in s:
@@ -31,4 +31,4 @@ def isValid(s: str) -> bool:
 
 
 if __name__ == "__main__":
-    print(isValid(r")([]{}"))
+    print(is_valid(r")([]{}"))
