@@ -6,7 +6,8 @@ def is_valid(s: str) -> bool:
         if char in char_dict.keys():
             try:
                 """the differnce between the index of brackets 
-                will always be eith both even or both odd"""
+                will always be eith both even or both odd
+                except for the two conditions below, where index could -ve or 1"""
                 
                 diff_in_index = s.index(char_dict[char]) - s.index(char)
                 
@@ -16,6 +17,7 @@ def is_valid(s: str) -> bool:
                 if diff_in_index < 0:
                     status.append(False)
                     continue
+                # implies they are together e.g (), {}
                 elif diff_in_index == 1:
                     status.append(True)
                     continue
