@@ -27,8 +27,8 @@ def get_intersection(combination):
     i, j = combination
 
     # find the union of knowledge between a pair of participants
-    intersection = set(people_dict[int(i)]).union(set(people_dict[int(j)]))
-    all_checkers.append(len(intersection))
+    union = set(people_dict[int(i)]).union(set(people_dict[int(j)]))
+    all_checkers.append(len(union))
 
 
 def acm_team(topic):
