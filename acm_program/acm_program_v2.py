@@ -16,6 +16,7 @@ all_checkers = []
 def extract_positions(topic_):
     global people_counter, people_dict
     people_counter += 1
+    # get the index of all topic a participant is knowledgeable in
     knowledgeable_about = [m.start() for m in re.finditer("1", topic_)]
     people_dict[people_counter] = []
     people_dict[people_counter].extend(knowledgeable_about)
