@@ -1,6 +1,4 @@
-from functools import reduce
 import itertools
-from re import sub
 import re
 
 #
