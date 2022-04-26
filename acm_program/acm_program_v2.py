@@ -1,6 +1,5 @@
 from functools import reduce
 import itertools
-from pydoc_data import topics
 from re import sub
 import re
 #
