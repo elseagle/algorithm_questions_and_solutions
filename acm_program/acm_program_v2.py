@@ -1,7 +1,7 @@
 import itertools
 import re
 
-#
+# https://www.hackerrank.com/challenges/acm-icpc-team/problem?
 # Complete the 'acmTeam' function below.
 #
 # The function is expected to return an INTEGER_ARRAY.
