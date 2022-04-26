@@ -32,7 +32,7 @@ def get_intersection(combination):
     all_checkers.append(len(intersection))
 
 
-def acmTeam(topic):
+def acm_team(topic):
     global people_dict, all_checkers
 
     _ = list(map(extract_positions, topic))
@@ -61,4 +61,4 @@ def acmTeam(topic):
 # N.B: Run one testcase at a time to get correct output
 
 # print(acmTeam(["10101", "11110", "00010", "00101"]))
-print(acmTeam(["11101", "10101", "11001", "10111", "10000", "01110"]))
+print(acm_team(["11101", "10101", "11001", "10111", "10000", "01110"]))
