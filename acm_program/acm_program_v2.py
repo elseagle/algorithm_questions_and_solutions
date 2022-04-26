@@ -36,6 +36,7 @@ def acm_team(topic):
     _ = list(map(extract_positions, topic))
 
     all_checkers = []
+    # all possible combinations of participant pairs
     all_combinations = list(
         itertools.product(range(1, len(topic) + 1), range(1, len(topic) + 1))
     )
